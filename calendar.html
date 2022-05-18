@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/evo-calendar.min.css">
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <!--fonts-->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <!--Box Icons-->
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<title>Calendar</title>
+</head>
+
+<body>
+<!--navBar-->
+<header>
+    <nav class="navbar">
+        <!-- <a href="#" class="nav-branding" style="font-size:20px;">Dashboard</a> -->
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <i class='bx bx-home'></i>
+                <a href="index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-shopping-bag'></i>
+                <a href="#" class="nav-link">Sales</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-chart'></i>
+                <a href="#" class="nav-link">Analytic</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-user-plus'></i>
+                <a href="login.html" class="nav-link">LogIn/Register</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-user-circle'></i>
+                <a href="#" class="nav-link">Account</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-category'></i>
+                <a href="#" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-category'></i>
+                <a href="#" class="nav-link">E-Commerce</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-mail-send'></i>
+                <a href="#" class="nav-link">Mail</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-chat'></i>
+                <a href="#" class="nav-link">Chat</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-calendar'></i>
+                <a href="#" class="nav-link">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-cog'></i>   
+                <a href="#" class="nav-link">Settings</a>
+            </li>
+        </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    </nav>
+    <!--End NavBar-->
+
+    
+ <!--calendar-->
+<div class="hero">
+    <div id="calendar"></div>
+</div>
+
+
+<!--calendarJS-->
+<script src="/js/calendar.js"></script>
+<!--jquery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<!--calendarJS-->
+<script src="/js/evo-calendar.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#calendar').evoCalendar({
+        theme:"Midnight Blue",
+        calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2022", // Event date (required)
+        description: "The heart touching greetings will make feel anyone very special.Wish your near and dear one with our special greetings.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Woman's Day", // Event name (required)
+        date: "March/8/2022", // Event date (required)
+        description: "An equal world is an enabled world.How will you help forge a gender equal world? Celebrate women's achievement. Raise awareness against bias. Take action for equality.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event3', // Event's ID (required)
+        name: "Christmas Eve", // Event name (required)
+        date: "January/7/2022", // Event date (required)
+        description: "An equal world is an enabled world.How will you help forge a gender equal world? Celebrate women's achievement. Raise awareness against bias. Take action for equality.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event4', // Event's ID (required)
+        name: "Halloween", // Event name (required)
+        date: "October/31/2022", // Event date (required)
+        description: "Where there is no imagination there is no horror.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2022", "February/15/2022"], // Date range
+        description: "“Christmas is built upon a beautiful and intentional paradox; that the birth of the homeless should be celebrated in every home.”", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+  });
+    })
+</script>
+
+</body>
+</html>

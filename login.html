@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<!--css-->
+	<link rel="stylesheet" href="/css/loginStyle.css">
+	<link rel="stylesheet" href="/css/loginNav.css">
+	<!--Box Icons-->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	
+</head>
+<body>
+	<!--animated Background-->
+	
+<!--navBar-->
+<header>
+    <nav class="navbar">
+        <!-- <a href="#" class="nav-branding">Dashboard</a> -->
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <i class='bx bx-home'></i>
+                <a href="index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-shopping-bag'></i>
+                <a href="#" class="nav-link">Sales</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-chart'></i>
+                <a href="#" class="nav-link">Analytic</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-user-plus'></i>
+                <a href="login.html" class="nav-link">LogIn/Register</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-user-circle'></i>
+                <a href="#" class="nav-link">Account</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-category'></i>
+                <a href="#" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-category'></i>
+                <a href="#" class="nav-link">E-Commerce</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-mail-send'></i>
+                <a href="#" class="nav-link">Mail</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-chat'></i>
+                <a href="#" class="nav-link">Chat</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-calendar'></i>
+                <a href="calendar.html" class="nav-link">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-cog'></i>   
+                <a href="#" class="nav-link">Settings</a>
+            </li>
+        </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    </nav>
+    <!--End NavBar-->
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<img src="/images/facebook.png">
+				<img src="/images/google.png">
+				<img src="/images/twitter_PNG95259.png">
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+			<button type="submit" class="submit-btn"><a href="/index.html">Log In</a></button>
+		</form>
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="email" class="input-field" placeholder="Email Id" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+			<button type="submit" class="submit-btn">Register</button>
+			</form>
+			</div>
+	</div>
+
+	<!--LoginJs Script-->
+<script src="/js/loginform.js"></script>
+
+</body>
+</html>
